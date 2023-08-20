@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="onboarding1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Let's set things up for you.</p>
+
+        <div class="question">
+            <label for="use">What will you use it for?</label>
+            <textarea id="use" rows="4" placeholder="Write here..."></textarea>
+        </div>
+
+        <div class="question">
+            <label>Community size</label>
+            <div class="options">
+                <div class="option">
+                    <i class="fas fa-users"></i>
+                    <span>Small</span>
+                </div>
+                <div class="option">
+                    <i class="fas fa-users fa-2x"></i>
+                    <span>Medium</span>
+                </div>
+                <div class="option">
+                    <i class="fas fa-users fa-3x"></i>
+                    <span>Large</span>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="location.href='onboarding2.html'">Continue to Next Step</button>
+    </div>
+
+    <script src="onboarding1.js"></script>
+</body>
+
+</html>
