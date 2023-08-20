@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Notion-like App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Kanit:wght@300&family=Lora&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
+    <nav>
+        <div class="logo">G1</div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Solution</a></li>
+            <li><a href="#" class="create-btn">Click to Create</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
         <header>
             <h1>A Unique Simple, Secure Custom Built Space</h1>
             <p>For you, your family, friends, followers, and community. Connect, communicate, and celebrate together
@@ -19,6 +27,38 @@
             <button onclick="location.href='signup.html'">Sign Up</button>
         </header>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="use-case">
+                <h3>Use Case</h3>
+                <ul>
+                    <li>Community Management</li>
+                    <li>Communication</li>
+                    <li>Campaign Management</li>
+                    <li>Calendar Management</li>
+                    <li>Content Management</li>
+                </ul>
+            </div>
+            <div class="benefits">
+                <h3>Benefits</h3>
+                <!-- You can add benefits here -->
+                <ul>
+                    <li>Benefit 1</li>
+                    <li>Benefit 2</li>
+                    <!-- ... Add more benefits as required -->
+                </ul>
+            </div>
+            <div class="story">
+                <h3>Story</h3>
+                <ul>
+                    <li>Create Communication</li>
+                    <li>Invite Followers</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 
