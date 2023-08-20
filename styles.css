@@ -249,7 +249,60 @@ footer {
     animation-delay: 0.3s;
 }
 
+/* ... [existing styles] ... */
+
+.benefits {
+    border-left: 5px solid #007BFF;
+    /* Adjust the color as needed */
+    padding-left: 20px;
+    /* Space after the border */
+}
+
+.benefits h3 {
+    font-size: 2rem;
+    /* Adjust font size based on your needs */
+    font-weight: bold;
+    display: flex;
+    /* To align the icon and text */
+    align-items: center;
+    /* Vertically centers the icon with the text */
+}
+
+.benefits h3::before {
+    content: "";
+    /* Reset content */
+    display: inline-block;
+    /* Makes it appear in line with text */
+    width: 24px;
+    /* Icon width, adjust as needed */
+    height: 24px;
+    /* Icon height, adjust as needed */
+    background-image: url('benifitss.png');
+    background-size: cover;
+    /* This will scale the image to cover the entire element */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
+    margin-right: 10px;
+    /* Space between the icon and text */
+}
+
+.benefits ul {
+    list-style-type: disc;
+    /* Bullet points */
+    margin-left: 20px;
+    /* Indent the list */
+}
+
+.benefits li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
 .footer-container .benefits {
+    border-left: 5px solid #007BFF;
+    /* Adjust the color as needed */
+    padding-left: 20px;
+    /* Space after the border */
     animation-delay: 0.5s;
 }
 
@@ -317,4 +370,30 @@ footer {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+/* ... [existing styles] ... */
+
+/* Styles for larger screens (default) */
+.card {
+    width: calc(20% - 20px);
+    /* This gives some space between the cards */
+}
+
+/* Styles for medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+        /* Cards take up half the width minus some space */
+    }
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px);
+        /* Cards take up full width minus some space */
+        margin: 10px auto;
+        /* Center the cards */
+    }
 }
