@@ -339,6 +339,7 @@ footer {
     margin: 10px;
     text-align: center;
     transition: transform 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card:hover {
